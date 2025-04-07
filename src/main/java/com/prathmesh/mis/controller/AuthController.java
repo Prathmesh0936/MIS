@@ -18,6 +18,7 @@ import com.prathmesh.mis.service.UserService;
 import jakarta.validation.Valid;
 
 @Controller
+@CrossOrigin(origins = "https://misapp.netlify.app")
 @RequestMapping("api/auth")
 public class AuthController {
 
