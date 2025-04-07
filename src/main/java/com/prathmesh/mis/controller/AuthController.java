@@ -14,12 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.prathmesh.mis.dao.LoginDao;
 import com.prathmesh.mis.dao.RegisterUserDao;
 import com.prathmesh.mis.service.UserService;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 import jakarta.validation.Valid;
 
 @Controller
-@CrossOrigin(origins = "https://misapp.netlify.app")
 @RequestMapping("api/auth")
 public class AuthController {
 
