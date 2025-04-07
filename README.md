@@ -1,6 +1,6 @@
 End User Documentation
 Project Overview
-Module Name: MIS (Management Information System)
+Module Name: MIS
 
 Purpose:
 The MIS module is designed to manage user authentication and password updates. It provides endpoints for user registration, login, and password management, including sending emails and verifying OTPs for password updates.
