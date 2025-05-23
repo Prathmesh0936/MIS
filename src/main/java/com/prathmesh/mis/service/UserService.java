@@ -1,5 +1,7 @@
 package com.prathmesh.mis.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -36,5 +38,9 @@ public class UserService {
 		
 		return user;
 		
+	}
+	
+	public Optional<User> findByEmail(String email) {
+		return userRepository.findByEmail(email);
 	}
 }
