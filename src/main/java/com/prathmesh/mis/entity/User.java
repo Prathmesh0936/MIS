@@ -82,6 +82,15 @@ public class User implements UserDetails {
 		this.created_at = created_at;
 	}
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
+		this.authorities = authorities;
+	}
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", full_name=" + full_name + ", email=" + email + ", password_hash=" + password_hash

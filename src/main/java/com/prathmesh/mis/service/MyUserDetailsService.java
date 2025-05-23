@@ -40,5 +40,10 @@ public class MyUserDetailsService implements UserDetailsService{
 						
 						);
 	}
+	
+	public User getUserByEmail(String email) {
+        return UserRepository.findByEmail(email)
+                .orElseThrow(() -> new UsernameNotFoundException("User with this email not Found!!!"));
+    }
 
 }

@@ -14,6 +14,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	@RestResource(exported = false)
 	Optional<User> findByEmail(String email);
 	
-	@RestResource(exported = true)
-    <S extends User> S save(S entity);
+	@RestResource(exported = false)
+	 <S extends User> S save(S entity);
 }
